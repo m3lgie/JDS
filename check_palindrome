@@ -1,0 +1,18 @@
+<?php
+class Palindrome
+{
+    public static function isPalindrome($word)
+    {
+        
+         if (strrev($word) == $word){   
+            return "Palindrome";   
+          } 
+            else{ 
+            return "Not a Palindrome"; 
+            } 
+    }
+}
+
+echo Palindrome::isPalindrome('Dad');
+
+?>
